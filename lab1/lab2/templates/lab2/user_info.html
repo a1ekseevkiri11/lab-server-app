@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>User Information</h2>
+
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <br>
+    <a href="{% url 'logout' %}">Выйти</a></p>
+    <br>
+    <a href="{% url 'tokens' %}">Активные пользователях</a></p>
+    <br>
+    <a href="{% url 'logout-all-tokens' %}">Удалить сессии для всех полдьзователей</a></p>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active Sessions</title>
+</head>
+<body>
+    <h2>Active Sessions</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Session Key</th>
+                <th>Expire Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for session in active_sessions %}
+                <tr>
+                    <td>{{ session.session_key }}</td>
+                    <td>{{ session.expire_date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
